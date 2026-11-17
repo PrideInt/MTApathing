@@ -1,0 +1,24 @@
+[package]
+name = "mta-graphing"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Shortest / fastest NYC subway routes for a given time and day, with a terminal UI"
+readme = "README.md"
+publish = false
+
+[[bin]]
+name = "mta"
+path = "src/main.rs"
+
+[dependencies]
+# None. Standard library only, so it builds offline on Windows, macOS and Linux.
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[lints.rust]
+# `--cfg win_check` lets the Windows console code be type-checked on other OSes.
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(win_check)'] }
