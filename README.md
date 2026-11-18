@@ -5,8 +5,8 @@ Find the best NYC subway route from one station to another for a given time and 
 This is a Rust port of my original MTA Graphing project back in undergrad where I wrote this in Java
 (without the UI). Wanted to port this to Rust because it's an excellent language, 
 having been learning it a while back. The ecosystem of Rust is still immature and indefinite,
-so I there wasn't much I wanted to build with it. But here, I decided to port an older resource
-written in my old friend Java decidedly to know how much I like Rust. So here's sumn.
+so personally there wasn't much I wanted to build with it. But here, I decided to port an older resource
+written in my old friend Java decidedly to know how much I like Rust. Final answer, it's great. So here's sumn.
 
 This tool has no dependencies (standard library only), so it builds offline on **Windows, macOS and Linux**.
 
