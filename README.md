@@ -2,10 +2,13 @@
 
 Find the best NYC subway route from one station to another for a given time and day with a sick UI.
 
-This is a Rust port of my original MTA Graphing project back in undergrad where I wrote this in Java.
-Without the UI though. Wanted to port this to Rust because I've been learning it a while back and I
-friggin LOVE Rust. I didn't know what to build with Rust though, so here's sumn.
-Here, it has no dependencies (standard library only), so it builds offline on **Windows, macOS and Linux**.
+This is a Rust port of my original MTA Graphing project back in undergrad where I wrote this in Java
+(without the UI). Wanted to port this to Rust because it's an excellent language, 
+having been learning it a while back. The ecosystem of Rust is still immature and indefinite,
+so I there wasn't much I wanted to build with it. But here, I decided to port an older resource
+written in my old friend Java decidedly to know how much I like Rust. So here's sumn.
+
+This tool has no dependencies (standard library only), so it builds offline on **Windows, macOS and Linux**.
 
 ![Route at rush hour](docs/route-rush-hour.png)
 ![Late-night route with a transfer](docs/route-late-night.png)
@@ -87,6 +90,12 @@ lines. Pass the full label, e.g. `"86th St (4 5 6)"`.
   `--data` at a newer copy with the same columns to update it.
 * Like the original, an edge means "one train serves both stations" without the order of stops.
   Each leg is therefore one ride, and its distance is straight-line.
+
+## AI Disclosure
+
+System designed from scratch including modularity of prior tool.
+Directed the use of DeepSeek agent to build this tool based on 
+models harnessed by code and systems written by me thusly trained.
 
 ---
 Original Java version and data model by me [here](https://github.com/PrideInt/mta-graphing).
