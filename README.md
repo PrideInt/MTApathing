@@ -17,9 +17,14 @@ This tool has no dependencies (standard library only), so it builds offline on *
 
 You need Rust 1.74 or newer (`rustup update`).
 
+To open the UI, run this in terminal at the project root:
 ```powershell
-cargo run --release             # opens the UI
-cargo install --path .          # optional: puts `mta` on your PATH
+cargo run --release
+```
+
+You can also set a local `mta` environmental variable PATH:
+```powershell
+cargo install --path .
 ```
 
 On Windows, run it in **Windows Terminal**. PowerShell and cmd work inside it, and colors and Unicode
@@ -27,9 +32,14 @@ render correctly there. The legacy console host on Windows 10 works too.
 
 ## How to Navigate the UI
 
+Show a live NYC clock:
 ```
-mta                                  # live NYC clock
-mta --day sat --time 2300            # start at a fixed time
+mta
+```
+
+Begin at a fixed time, e.g.:
+```
+mta --day sat --time 2300
 ```
 
 | Field | Keys |
